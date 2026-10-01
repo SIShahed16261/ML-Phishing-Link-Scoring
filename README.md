@@ -632,7 +632,6 @@ United International University
 -   Mushfiq Labib Maher
 -   Mahadin Islam
 
-**Section:** B
 
 ------------------------------------------------------------------------
 
