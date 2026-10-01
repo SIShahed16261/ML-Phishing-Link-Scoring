@@ -1,0 +1,43 @@
+Dataset Access
+The datasets are not required to be stored directly in this repository. Download them from their original sources and place them where the notebook expects them.
+
+1. Majestic Million
+Used as the primary benign-domain source.
+
+Official source:
+
+https://majestic.com/reports/majestic-million
+
+The paper uses the top 1,000,000 domains from Majestic Million and treats these entries as benign.
+
+2. Malicious URLs Dataset
+The original dataset contains 651,191 URLs across benign, defacement, phishing, and malware classes.
+
+For this project, only:
+
+benign
+phishing
+are retained.
+
+Kaggle:
+
+https://www.kaggle.com/datasets/sid321axn/malicious-urls-dataset
+
+3. PhiUSIIL Phishing URL Dataset
+PhiUSIIL is used only for external validation, not for training or model selection.
+
+Dataset size:
+
+235,795 URLs
+134,850 legitimate
+100,945 phishing
+Important label convention:
+
+PhiUSIIL:
+1 = legitimate
+0 = phishing
+This is the opposite of the label convention used by the development data, so the notebook must map the labels correctly before calculating external-validation metrics.
+
+Dataset information:
+
+https://archive.ics.uci.edu/dataset/967/phiusiil+phishing+url+dataset
